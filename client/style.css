@@ -1,4 +1,11 @@
 body{
-    background-color: #000042;
+    background-color: #202020;
     color: aliceblue;
+    font-family: monospace;
+}
+
+.custom-input {
+    width: 150px;  /* Largeur personnalisée */
+    height: 30px;  /* Hauteur personnalisée */
+    font-size: 14px; /* Texte plus petit */
 }
