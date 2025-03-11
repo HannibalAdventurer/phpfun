@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Welcome </h1>
-<?php echo "firstcode"; 
+<?php 
 
 
 /*
@@ -31,28 +31,10 @@ kol we7id yi5dem fama formulaire mitha
 !soum se3a mte3ou 
 */
 
-function Add_user(){
-if($_SERVER["REQUEST_METHOD"]== "POST"){
-    for($i=0;$i<5;$i++){
-        $name=$_POST['name'];
-        $profesion=$_POST['profession'];
-        $Workhours=$_POST['Workhours'];
-    echo <<<"hello"
-<br>
-$name <br> $profesion <br> $Workhours 
-hello;
-    }
-}
-};
-Add_user();
 
 ?>
 
-<form method="post" action="">
-<input type="text" name="name" placeholder="name & lastname">
-<input type="text" name="profession" placeholder="Profession">
-<input type="tel" name="Workhours" placeholder= "Work Hours">
-<input type="submit" value="send"> 
+
 </form>
 </body>
 </html>
