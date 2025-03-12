@@ -53,7 +53,42 @@ $ch1->setNom("Lucky");
 
 echo $ch1->getNom()." is ".$ch1->getRace()."\n";
 
+class Cars{
+    public $brand;
+    public $color;
+    public $year;
+
+public function __construct($brand,$color,$year){
+    $this->brand=$brand;
+    $this->color=$color;
+    $this->year=$year;
+
+}
+public function displayInfo(){
+echo "\n <br>";
+echo "brand : ".$this->brand."<br>";
+echo "Color : ".$this->color."<br>";
+echo "Year  : ".$this->year. "<br>";
+}
+
+}
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $brand=$_POST["brandcar"]?? "Unknown"; 
+    $color=$_POST["colorcar"]?? "Unknown"; 
+    $year=$_POST["yearcar"]?? "Unknown"; 
+
+    $newCar=new Cars($brand,$color,$year);
+    $newCar->displayInfo();
+}
+
+
 ?>
+
+
+
+
+
 
 </body>
 </html>
